@@ -1,10 +1,12 @@
 # Agenda APP
 
-A simple app using node & express for mananging phone books
+A simple app using node & express for managing phone books
 
 ## Setup
 
 ```
+git clone https://github.com/Valentiu77/node-agenda.git
+cd node-agenda
 npm install
 ```
 
