@@ -12,7 +12,7 @@ function displayContacts(contacts) {
             <td>${contact.fistName}</td>
             <td>${contact.lastName}</td>
             <td>${contact.phone}</td>
-            <td><a href="data/contacts.json">x</a></td>
+            <td><a href="/contacts/delete?phone=${contact.phone}">x</a></td>
         </tr>`;
     });
 
