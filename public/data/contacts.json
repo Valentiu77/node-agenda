@@ -1,15 +1,12 @@
 [
-    {
-        "fistName" : "Stamate",
-        "lastName": "Valentiu",
-        "phone": "0751628051"
-    },
-
-    {
-        "fistName" : "Dan",
-        "lastName": "Stamate",
-        "phone": "0751628052"
-    }
-
-
+  {
+    "firstName": "Stamate",
+    "lastName": "Valentiu",
+    "phone": "0751628051"
+  },
+  {
+    "firstName": "Dan",
+    "lastName": "Stamate",
+    "phone": "0751628052"
+  }
 ]
