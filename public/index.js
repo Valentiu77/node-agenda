@@ -40,7 +40,7 @@ function saveContact() {
 
 function displayContacts(contacts) {
     var rows = contacts.map(function (contact) {
-        console.log("transofrm contacts", contact);
+        // console.log("transofrm contacts", contact);
         return `<tr>
             <td>${contact.firstName}</td>
             <td>${contact.lastName}</td>
@@ -52,7 +52,7 @@ function displayContacts(contacts) {
         </tr>`;
     });
 
-    console.warn('rows', rows);
+    // console.warn('rows', rows);
     // rows.push(getNewRow()); //simplified
     var actions = getNewRow();
     rows.push(actions);
@@ -83,7 +83,9 @@ function doSearch (ev) {
     var value = this.value.toLowerCase();
 
     var filteredContacts = globalContacts.filter(function(contact) {
-        return contact.firstName.toLowerCase().includes(value);
+        return contact.firstName.toLowerCase().includes(value) || 
+                contact.lastName.toLowerCase().includes(value) ||
+                contact.phone.toLowerCase().includes(value);
     });
 
     displayContacts (filteredContacts);
