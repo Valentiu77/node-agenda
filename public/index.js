@@ -78,10 +78,16 @@ function initEvents() {
 
 }
 
-function doSearch () {
-    var value = this.value;
+function doSearch (ev) {
     // var value = document.getElementById('search').value;
-    console.info('plsease... search', value);
+    var value = this.value;
+
+    var filteredContacts = globalContacts.filter(function(contact) {
+        console.log(contact.firstName, value)
+        return contact.firstName == value;
+    });
+
+    displayContacts (filteredContacts);
 }
 
 loadContacts();
