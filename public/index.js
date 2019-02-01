@@ -73,6 +73,15 @@ function initEvents() {
         $('input[name=lastName]').val(contact.lastName);
         $('input[name=phone]').val(contact.phone);
     });
+
+    document.getElementById('search').addEventListener('input', doSearch);
+
+}
+
+function doSearch () {
+    var value = this.value;
+    // var value = document.getElementById('search').value;
+    console.info('plsease... search', value);
 }
 
 loadContacts();
